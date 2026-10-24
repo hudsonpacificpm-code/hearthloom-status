@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Hearthloom status</title>
+<!--
+  HAND-WRITTEN STATUS PAGE. No scripts, no tracking, no outside files, no user data, no secrets.
+  It lives on a host that is NOT Railway (and not Cloudflare). Only Aron edits it.
+  To post an update: change the three things marked EDIT below, then publish. Nothing else needs to change.
+  Never put tenant names, host names, keys, or any private detail on this page. It is public.
+-->
+<style>
+  :root { --bg:#F6F4EE; --card:#FFFFFF; --text:#26323A; --muted:#66727A; --border:#E2DDD0; --accent:#3D5A6C; --ok:#2F7D4F; --warn:#A06A1F; --warnbg:#F6EAD2; }
+  @media (prefers-color-scheme: dark) { :root { --bg:#14181B; --card:#1D2327; --text:#E8ECEE; --muted:#9AA6AD; --border:#2C353B; --accent:#8FB3C7; --ok:#6CC08A; --warn:#E0B060; --warnbg:#3A2F18; } }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+  main { max-width: 640px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 4px; }
+  .sub { color: var(--muted); margin: 0 0 20px; font-size: 14px; }
+  .status { border-radius: 10px; padding: 14px 16px; margin-bottom: 20px; border: 1px solid var(--border); background: var(--card); }
+  .status.issue { background: var(--warnbg); border-color: var(--warn); }
+  .status strong { display:block; font-size: 18px; margin-bottom: 4px; }
+  .status.issue strong { color: var(--warn); }
+  .status.ok strong { color: var(--ok); }
+  h2 { font-size: 16px; margin: 24px 0 8px; }
+  ul { margin: 0; padding-left: 20px; }
+  li { margin-bottom: 6px; }
+  a { color: var(--accent); }
+  .updated { color: var(--muted); font-size: 13px; margin-top: 4px; }
+  footer { margin-top: 32px; color: var(--muted); font-size: 13px; border-top: 1px solid var(--border); padding-top: 12px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Hearthloom status</h1>
+  <p class="sub">What is working, what is not, and what to do. Written by hand by the Hearthloom team.</p>
+
+  <!-- EDIT 1 of 3: the headline. Use class="status ok" for normal days, class="status issue" during a problem. -->
+  <div class="status ok">
+    <strong>No known problems</strong>
+    <!-- EDIT 2 of 3: one or two plain sentences. Say what you know; do not promise when it will be fixed. -->
+    Nothing is reported at this time. This page is updated by hand when there is a problem.
+    <!-- EDIT 3 of 3: the time of this update. -->
+    <div class="updated">Last updated: no incidents posted.</div>
+  </div>
+
+  <h2>If Hearthloom is ever unavailable</h2>
+  <ul>
+    <li>You may not be able to sign in, see messages, or send messages to tenants inside Hearthloom.</li>
+    <li>Tenants may not be able to open their chat.</li>
+    <li>Avelio drafts and automatic replies are paused until Hearthloom is back.</li>
+  </ul>
+
+  <h2>What to do</h2>
+  <ul>
+    <li><strong>Contact your tenants directly</strong> by phone or email for anything that cannot wait.</li>
+    <li>If your account is connected to Hospitable, you can also message guests through Hospitable or the booking site (Airbnb, VRBO, Booking.com) directly.</li>
+    <li>Please do not re-send messages over and over. Check back here for updates.</li>
+  </ul>
+
+  <h2>Our hosting provider</h2>
+  <p>Railway publishes its own status page, with more technical detail: <a href="https://status.railway.com" rel="noopener noreferrer">status.railway.com</a></p>
+
+  <footer>This page is not part of the Hearthloom app, so it stays available when the app is down.</footer>
+</main>
+</body>
+</html>
